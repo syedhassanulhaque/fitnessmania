@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FitnessMania
+    </title>
+    <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+      body{
+     					background: url('https://source.unsplash.com/random/2400x1500/?gym,dark')  ;  
+							/* background: url('/image/bg.jpg'); */
+							color: white;
+						   height:100vh;
+      						}
+      		
+      			.left{
+      				/*		border: 2px solid green;  */
+      						display: inline-block;
+							position:absolute;
+							top: 10px;
+							left: 30px;
+      						}
+				.left h4{ display: inline-block;
+									font-family: cursive;
+									font-weight: bolder;
+									font-size: 32px;
+									}
+      			.mid{
+      				/*		border: 2px solid green;  */
+      						display: block;
+							margin :10px   auto;
+					   	   width: 50%;
+							
+      						}
+					.navbar{
+							display: inline-block;
+							margin :10px   auto;
+									}
+					.navbar ul li{
+						   text-decoration: none;
+							display: inline-block;
+							
+									}
+					.navbar ul li a {
+						     color: white;
+							 text-decoration: none;
+							/* margin: 1px 10px; */
+							font-size:20px;
+						    font-weight:bold;
+							padding: 5px 10px;
+							transition: all 1s;
+									}
+					.navbar ul li a:hover{
+									color: black;
+
+									cursor:pointer;
+									background: rgba(221, 212, 212, 0.425);
+									}
+
+      			.right{
+      				/*		border: 2px solid green;  */
+      						display: inline-block;
+							position: absolute;
+						    top: 10px;
+							right: 30px;
+      						}
+					.right button{
+									border: 2px solid  gray;
+									border-radius:20px;
+									padding : 3px 15px;
+									text-align:center;
+									color:white;
+									background :transparent;
+									font-size:20px;
+									font-family:cursive;
+									margin: 3px 5px;
+									transition: all 1s;
+									}
+					  .right button:hover{
+							/*		color: rgb(255,210,210); */
+									background: gray;
+									cursor:pointer;
+									}
+						.container{
+									border: 3px solid white;
+									border-radius: 20px;
+									display: inline-block;
+									width: 350px;
+									padding: 39px;
+									position: absolute;
+						 			  top: 150px;
+									left: 150px;
+									transition: all 1s;
+									}
+						.input{		outline: none;
+									border: none;
+									border-bottom: 2px solid gray;
+									display: block;
+									margin: 20px auto;
+									padding: 5px;
+									/* border:2px solid gray; */
+									border-radius: 16px;
+									text-align:center;
+									width: 260px;
+									font-size: 14px;
+									background: transparent;
+									transition: all 1s;
+									color: whitesmoke;
+									
+									}
+						.container button{
+									display: block;
+									margin: 15px auto;
+									border:2px solid gray;
+									border-radius: 15px;
+									padding: 4px;
+									background: transparent;
+									color: white;
+									width: 230px;
+									font-family: cursive;
+									font-weight: bolder;
+									font-size: 20px;
+									transition: all 1s;
+									}
+						.container h2{
+									font-family: cursive;
+									font-weight: bolder;
+									text-align:center;
+									}
+						.container button:hover{
+								background: black;
+									color: white;
+									cursor:pointer;
+									}
+
+						.container:hover{
+							background: rgba(30, 30, 31, 0.877);
+							cursor: pointer;
+							border: 2px groove rgb(228, 243, 20);
+							border-radius: 50px;
+						}
+						.input:hover{
+							/* background: black; */
+							border-radius: 0px;
+						}
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <h4>FitnessMania </h4>
+      </div>
+
+
+
+      <div class="mid">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#">Home </a>
+            </li>
+            <li><a href="#"> Fitness Club</a>
+            </li>
+            <li><a href="#">About Us</a> </li>
+            <li><a href="#">Contact Us </a>
+            </li>
+            <li><a href="#"> Photos </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="right">
+        <button>Email us </button>
+        <!-- <button>Call us</button> -->
+      </div>
+
+    </header>
+
+    <section>
+      <div class="container">
+        <h2>Join the Gym now</h2>
+        <form>
+          <input class="input" type="text" placeholder="Enter your Name">
+          <input class="input" type="text" placeholder="Enter your Age">
+          <input class="input" type="text" placeholder="Enter your Gender">
+          <input class="input" type="text" placeholder="Enter your Locality">
+          <input class="input" type="text" placeholder="Enter your Cotact No">
+        </form>
+        <button action="">Submit </button>
+      </div>
+    </section>
+  </body>
+
+</html>
